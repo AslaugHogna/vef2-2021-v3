@@ -1,4 +1,4 @@
-// import { promises } from 'fs';
+
 import faker from 'faker';
 
 import { readFile } from 'fs/promises';
@@ -6,12 +6,18 @@ import { query, end } from './db.js';
 
 const schemaFile = './sql/schema.sql';
 
+/**
+ * Skilar random athugasemd úr faker með 50% líkum.
+ */
 function commentStats() {
   if (Math.random() > 0.5) {
     return faker.lorem.sentence();
   } return '';
 }
 
+/**
+ *  Sækir gögn úr faker og setur í töfluna
+ */
 async function fakeData(n) {
   for (let i = 0; i < n; i += 1) {
     const name = faker.name.findName();
