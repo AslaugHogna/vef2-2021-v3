@@ -8,6 +8,7 @@ Keyrt með:
 * `npm start` keyrir setup á gagnagrunnum (sjá að neðan) og keyrir síðan upp express vefþjón á porti `3000`
 * `npm test` keyrir eslint og stylelint
 
+npm start keyrir setup.js og svo app.js
 npm run setup hendir töflunum signatures og users, býr þær skv. schema.sql, setur gögn í signatures með faker og býr til notandann admin / 123.
 
 Keyrandi á heroku: https://vef2-ah-verkefni3.herokuapp.com/
