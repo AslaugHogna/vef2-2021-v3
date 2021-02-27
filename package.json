@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "nodemon ./src/app.js",
-    "test": "eslint ./src",
+    "test:eslint": "eslint ./src --fix", 
+    "test:stylelint": "stylelint ./public/styles.css",
+    "test": "concurrently npm:test:*",
     "start": "node ./src/app.js",
     "setup": "node ./src/setup.js"
   },
@@ -26,6 +28,7 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "pg": "^8.5.1",
+    "faker": "^5.4.0",
     "xss": "^1.0.8"
   },
   "devDependencies": {
@@ -33,7 +36,9 @@
     "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "faker": "^5.4.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "stylelint": "^13.11.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
