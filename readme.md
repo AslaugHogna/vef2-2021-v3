@@ -9,3 +9,5 @@ Keyrt með:
 * `npm test` keyrir eslint og stylelint
 
 npm run setup hendir töflunum signatures og users, býr þær skv. schema.sql, setur gögn í signatures með faker og býr til notandann admin / 123.
+
+Keyrandi á heroku: https://vef2-ah-verkefni3.herokuapp.com/
